@@ -1,0 +1,249 @@
+a:visited{
+	color: #505050;
+}
+
+#strelka{
+	position: relative;
+ 	 margin-top: 28px;
+ 	 margin-left: 3px;
+	
+	/*
+	width: 0;
+  height: 0;
+  border: 25px solid transparent; 
+  display: inline-block;
+  margin: 6px 10px;
+   border-left-color: #fff;  
+  border-right: 0;
+  */
+}
+#strelka:before, #strelka:after{
+	content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent; 
+    border-right: 0;
+}
+#strelka{
+	width: 16px;
+  height: 5px;
+  background: #fff;
+}
+#strelka:after{
+	top: -15px;
+    right: -20px;
+    border-left-color: #fff;  
+}
+
+#autorization{
+	width:80%;
+	display: inline-block;
+}
+#enter-div{
+	position: fixed;
+	margin-top: 30px;
+	margin-left:20px;
+	height: 60px;
+	background-color: royalblue;
+	width: 44px;
+	display: inline-block;
+}
+#enter-div:hover{
+	cursor: pointer;
+}
+
+.ts:hover{
+	cursor: pointer;
+}
+.none:hover{
+	cursor: pointer;
+}
+#masta,.masta{
+	border-width: 0;
+	border-bottom-width: 2px;
+	border-color: #555;
+	border-style: solid;
+	background-color: #fff;
+	height: 36px;
+	width: 100%;
+	display: inline-block;
+	/*box-sizing: border-box;*/
+	padding: 6px;
+	cursor: text;
+	text-align: start;
+
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+#masta:focus{
+	outline: none;
+	border-color: royalblue;
+}
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:inherit;
+}
+a{
+	text-decoration:none;
+}
+body{
+	min-width: 1000px;/*TODO*/
+	font-family: "Britannic Bold",arial,sans-serif;
+	box-sizing:border-box;
+	font-size: 16pt;
+}
+#wrapper{
+	width:50%;
+	margin:0 auto;
+	background-color:#FFF;
+}
+#top{
+	user-select:none;
+	width:100%;
+	height:80px;
+	background-color:royalblue;
+	text-align:left;
+	padding-left:12%;
+	padding-top:20px;
+	font-size:20pt;
+	color:#fff;
+}
+#block-1:first-child{
+	border-bottom: 2px solid royalblue;
+	width:100%;
+	height:100px;
+	background-color: #FFF;
+	color:#505050;
+	font-size:18pt;
+	line-height: 100px;
+}
+#block-1:not(:first-child){
+	border-bottom: 2px solid royalblue;
+	width:100%;
+	height:100px;
+	background-color: #FFF;
+	color:#505050;
+	font-size:18pt;
+	line-height: 100px;
+}
+#block-top{
+	width:100%;
+	height:40px;
+	background-color: #FFF;
+	color:#505050;
+	font-size:12pt;
+	padding-top:20px;
+	text-decoration: none;
+}
+#block{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	width: 100%;
+	height:60px;
+	background-color: #505050;
+	margin-top:10px;
+	font-size: 18pt;
+	color:#fff;
+}
+#block-1:hover{
+	background-color: #CCC;
+}
+#left-in{
+	width: 35%;
+	height:60px;
+	padding-top:15px;
+	padding-left:15px;
+}
+#right-in{
+	width: 65%;
+	height:60px;
+}
+input[type=text]{
+	font-size: 14pt;
+	height: 30px;
+   	margin-top:15px;
+   	border:0;
+   	padding: 3px;
+}
+#lstblck{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+button{
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	font-size: 14pt;
+	min-width:180px;
+	color:#fff;
+	width: 35%;
+	height:40px;
+	margin-top: 20px;
+	border: 0;
+	outline: 0;
+	background-color: royalblue;
+}
+
+.input-box, .input-box__input {
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+.input-box__placeholder {
+	z-index: 100;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: top .2s ease;
+}
+
+.input-box:focus .input-box__input:focus .input-box__placeholder {
+	top: -1em;
+}
+
+
+.input-box{
+	margin-top: 20px;
+  font: 20px Arial;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  position: relative;
+}
+.input-box__input{
+	font: 20px Arial;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: transparent;
+  -webkit-transition: border-color .1s linear;
+  -moz-transition: border-color .1s linear;
+  transition: border-color .1s linear;
+  position: relative;
+  z-index: 2;
+}
+.input-box > input:invalid + span {
+  color: #999;
+  font-size: 20px;
+  top: 5px;
+}
+
+.input-box > input:valid + span, .input-box > input:focus + span {
+  color: #333;
+  font-size: 12px;
+  top: -15px;
+}
