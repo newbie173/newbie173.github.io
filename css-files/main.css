@@ -1,3 +1,5 @@
+
+
 a:visited{
 	color: #505050;
 }
@@ -55,7 +57,6 @@ a{
 	text-decoration:none;
 }
 body{
-	min-width: 1000px;/*TODO*/
 	font-family: "Britannic Bold",arial,sans-serif;
 	box-sizing:border-box;
 	font-size: 16pt;
@@ -152,5 +153,36 @@ button{
 	border: 0;
 	outline: 0;
 	background-color: royalblue;
+}
+
+@media screen and (max-width: 900px){
+	#top{
+		margin:0;
+		padding: 0;
+		padding-top: 20px;
+		text-align: center;
+	}
+	#wrapper{
+		width: 80%;
+	}
+	#block-1:first-child{
+		border-bottom: 2px solid royalblue;
+		width:100%;
+		height:100px;
+		background-color: #FFF;
+		color:#505050;
+		font-size:20pt;
+		line-height: normal;
+	}
+	#block-1:not(:first-child){
+		border-bottom: 2px solid royalblue;
+		width:100%;
+		height:100px;
+		background-color: #FFF;
+		color:#505050;
+		font-size:20pt;
+		line-height: normal;
+	}
+
 }
 
