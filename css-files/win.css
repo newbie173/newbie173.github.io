@@ -62,7 +62,6 @@
 	margin: 15% auto;
 	padding: 20px;
 	width:50%;
-	
 	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 }
 .close-2{
@@ -94,4 +93,15 @@
 	-o-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	transform: rotate(180deg));
+}
+@media screen and (max-width: 900px){
+	.modal-content-2{
+		width: 100%;
+	}
+/*	#autorization{
+		width:65%;
+	}
+	#enter-div{
+		width:25%;
+	}*/
 }
