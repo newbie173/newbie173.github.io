@@ -126,18 +126,7 @@ button{
 	background-color: royalblue;
 }
 
-@media screen and (max-width: 900px){
-	#top{
-		margin:0;
-		padding: 0;
-		padding-top: 20px;
-		text-align: center;
-	}
-	#wrapper{
-		width: 80%;
-	}
-}
-@media (max-width: 900px){
+@media screen and (max-width: 800px){
 	#top{
 		margin:0;
 		padding: 0;

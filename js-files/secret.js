@@ -41,8 +41,8 @@ span5.onclick = function(){
 
 
 var enterBtn = document.getElementById("enter-div");
-var v1 = document.getElementById("mastamasta");
-var v2 = document.getElementById("masta2");
+var i1 = document.getElementById("mastamasta");
+var i2 = document.getElementById("masta2");
 let btnRedirect = document.getElementById('btnRedirect');
 	/*
 	var login = document.getElementsByClassName("e")[0];
@@ -53,17 +53,15 @@ let btnRedirect = document.getElementById('btnRedirect');
 		btnRedirect.onclick = function(e) {
 		e.preventDefault();
 		//modal.style.display = "block";
-		if(v1.value !== "") {
-			console.log('Login is not empty');
-			window.location = btnRedirect.href;
-		}else{
-			console.log('Login is empy!');
-		}
-		if(v2.value !== "") {
-			console.log('Password is No empty');
-		}else{
-			console.log('Password is empy!');
-		}
-
-	};
-}
+			if(i1.value == "Login" && i2.value == "Password") {
+				window.location = btnRedirect.href;
+			}else if(i1.value !== "Login"){
+				i1.value="";
+				i1.placeholder = "Неверный логен";
+			}
+			if(i2.value !== "Password") {
+				i2.value="";
+				i2.placeholder = "Неверный пароль";
+			}	
+		};
+	}
