@@ -10,19 +10,29 @@ html{
 	height: 100px;
 	background-color: darkorange;
 }
+img{
+	width: 100%;
+	height: auto;
+}
 #content-div{
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 400px;
+	grid-template-rows: auto 200px;
+	position: relative;
 	background-color: #586987;
-	background-image: url(img/trek.jpg); 
-	position: center;
+	/*background-image: url(img/white-after.jpg); */
+
 	background-repeat: no-repeat;
 	text-align: center;
 	background-size: 100% auto;
-	vertical-align:middle;
+	/*vertical-align:middle;*/
+	/*background-position: center;*/
 	/*margin: 0 auto;*/
 }
+#gray-div{
+	background-color: #BBB;
+}
+
 /*.grid-div{
 	border-style: 
 	width: 500px;
