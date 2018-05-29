@@ -14,10 +14,17 @@ img{
 	width: 100%;
 	height: auto;
 }
+p{
+	font-size: 140%;
+	font-family: "Arial";
+	color: white;
+	text-align: center;
+	line-height: 150px;
+}
 #content-div{
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: auto 200px;
+	grid-template-rows: auto 200px auto 450px;
 	position: relative;
 	background-color: #586987;
 	/*background-image: url(img/white-after.jpg); */
@@ -31,6 +38,9 @@ img{
 }
 #gray-div{
 	background-color: #BBB;
+}
+#green-div{
+	background-color: darkgreen;
 }
 
 /*.grid-div{
